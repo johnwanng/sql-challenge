@@ -20,7 +20,7 @@ create table employees (emp_no int primary key,
 						 
 select * from employees;
 
-create table salaries (emp_no int references employees(emp_no), salary dec);
+create table salaries (emp_no int references employees(emp_no) primary key, salary dec);
 
 select * from salaries;
 
